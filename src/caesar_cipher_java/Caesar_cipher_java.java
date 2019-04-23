@@ -18,9 +18,8 @@ public static void main(String[] args){
 
   String alphabet= "zyxwvutsrqponmlkjihgfedcba";// الاحرف  مرتبة
 		String text="";// النص المشفر
-		Scanner sc=new Scanner(System.in);// كائن للقراءة objet 
-		System.out.println("enter text");
-		String textEncrypted=sc.nextLine().toLowerCase(); // قراءة النص من المستخدم
+		
+		String textEncrypted="zw yv yru repkyzex tfewzuvekzrc kf jrp yv nifkv zk ze tzgyvi kyrk zj sp jf tyrexzex kyv fiuvi fw kyv cvkkvij fw kyv rcgyrsvk kyrk efk r nfiu tflcu sv druv flk";
                 String []word_expected={"had","ahmed"};
                    int key_encryption=1;
                   
