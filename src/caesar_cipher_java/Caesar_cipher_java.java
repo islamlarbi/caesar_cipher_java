@@ -21,7 +21,7 @@ public static void main(String[] args){
 		Scanner sc=new Scanner(System.in);// كائن للقراءة objet 
 		System.out.println("enter text");
 		String textEncrypted=sc.nextLine().toLowerCase(); // قراءة النص من المستخدم
-                String []word_expected={"ahmed","ahmed"};
+                String []word_expected={"had","ahmed"};
                    int key_encryption=1;
                   
                 for(int i=0;i<textEncrypted.length();i++) {// text من اجل استخراج احرف
@@ -31,7 +31,7 @@ public static void main(String[] args){
                             if(textEncrypted.charAt(i)==' '){text=text+' ';break; 
 			}
 		}
-                     if(testin(word_expected,text)==true||key_encryption>26){break;}else{if(i==textEncrypted.length()-1){key_encryption++;text=""; i=0;}}
+                     if((testin(word_expected,text)&&text.length()==textEncrypted.length()-1)||key_encryption>26){break;}else{if(i==textEncrypted.length()-1){key_encryption++;text=""; i=0;}}
               }  
                 
 		System.out.println("textEncrypted : \n"+text);// اظهار النتيجة
