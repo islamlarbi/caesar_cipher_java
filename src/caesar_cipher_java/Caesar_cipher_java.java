@@ -22,9 +22,9 @@ public static void main(String[] args){// main function
 public static String Decryption_cezar(String []word_expected,String textEncrypted){// function Decryption have to parameter 
       String alphabet= "zyxwvutsrqponmlkjihgfedcba";// The characters are reversed
 		String text="";// text clair
-		textEncrypted=textEncrypted.toLowerCase(); // قراءة النص من المستخدم
+		textEncrypted=textEncrypted.toLowerCase(); // characters to lower characters
                 
-                   int key_encryption=1;
+                   int key_encryption=1; // key encryption we start with value equal 1 
                   
                 for(int i=0;i<textEncrypted.length();i++) {// text من اجل استخراج احرف
 			for(int j=0;j<26;j++) {// alphabet من اجل استخراج احرف
