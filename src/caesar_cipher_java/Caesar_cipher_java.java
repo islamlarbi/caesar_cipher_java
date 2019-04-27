@@ -13,14 +13,17 @@ import java.util.Scanner;
  */
 public class Caesar_cipher_java {
 
-public static void main(String[] args){
+public static void main(String[] args){// main function 
+                String text="y jhyut huqsxydw ekj je jxu secfqdo qdt aufj husuylydw qkjecqjut huifediui";//Example of encrypted text you can change text here or use scanner 
+                String []word_expected={"to","ahmed"};//word_expected You can add any number of texts The important thing in it is at least one valid and justified in the encoded text
+		System.out.println("textEncrypted : \n"+Decryption_cezar(word_expected,text));// result use one function only 
 
-
-  String alphabet= "zyxwvutsrqponmlkjihgfedcba";// الاحرف  مرتبة
-		String text="";// النص المشفر
-		
-		String textEncrypted="zw yv yru repkyzex tfewzuvekzrc kf jrp yv nifkv zk ze tzgyvi kyrk zj sp jf tyrexzex kyv fiuvi fw kyv cvkkvij fw kyv rcgyrsvk kyrk efk r nfiu tflcu sv druv flk";
-                String []word_expected={"had","ahmed"};
+}// end main function 
+public static String Decryption_cezar(String []word_expected,String textEncrypted){// function Decryption have to parameter 
+      String alphabet= "zyxwvutsrqponmlkjihgfedcba";// The characters are reversed
+		String text="";// text clair
+		textEncrypted=textEncrypted.toLowerCase(); // قراءة النص من المستخدم
+                
                    int key_encryption=1;
                   
                 for(int i=0;i<textEncrypted.length();i++) {// text من اجل استخراج احرف
@@ -30,13 +33,13 @@ public static void main(String[] args){
                             if(textEncrypted.charAt(i)==' '){text=text+' ';break; 
 			}
 		}
-                     if((testin(word_expected,text)&&text.length()==textEncrypted.length()-1)||key_encryption>26){break;}else{if(i==textEncrypted.length()-1){key_encryption++;text=""; i=0;}}
+           if((testin(word_expected,text)&&text.length()==textEncrypted.length()-1)||key_encryption>26){break;}
+           else{if(i==textEncrypted.length()-1){key_encryption++;text=""; i=0;}}
+
               }  
-                
-		System.out.println("textEncrypted : \n"+text);// اظهار النتيجة
+
+ return text;
 }
-
-
 public static boolean testin(String[] a,String b){
  String f[] = b.split(" ");
  for(int i=0;i<f.length;i++){
@@ -44,5 +47,5 @@ public static boolean testin(String[] a,String b){
            if(f[i].equals(a[k])){  return true;}}
                              
  } return false;
-};
+}
 }
