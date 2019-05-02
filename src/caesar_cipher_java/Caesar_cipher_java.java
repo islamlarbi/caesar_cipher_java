@@ -40,7 +40,7 @@ public static String Decryption_cezar(String []word_expected,String textEncrypte
 
               }  
 
- return text;
+ return text;// return result
 }
 public static boolean testin(String[] expected_word,String text_clair){// we search if one of expected word existe in text after decryption
  String text_clair_array[] = text_clair.split(" ");// Convert text to array for In order to compare characters 
@@ -51,4 +51,3 @@ public static boolean testin(String[] expected_word,String text_clair){// we sea
         return false;// return false if no one of expected word existe in text for more test authre jey 
 }
 }
-
