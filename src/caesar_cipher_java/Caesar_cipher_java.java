@@ -39,7 +39,7 @@ public static String Decryption_cezar(String []word_expected,String textEncrypte
            if(i==textEncrypted.length()-1){key_encryption++;text=""; i=0;}
 
               }  
-
+//
  return text;// return result
 }
 public static boolean testin(String[] expected_word,String text_clair){// we search if one of expected word existe in text after decryption
