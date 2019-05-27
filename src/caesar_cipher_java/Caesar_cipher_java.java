@@ -37,7 +37,7 @@ public static String Decryption_cezar(String []word_expected,String textEncrypte
            if((testin(word_expected,text)&&text.length()==textEncrypted.length()-1)||key_encryption>26){break;} 
            if(i==textEncrypted.length()-1){key_encryption++;text=""; i=0;}
 
-              }  
+              }  //ff
 //
  return text;// return result
 }
