@@ -18,7 +18,7 @@ public static void main(String[] args){// main function
                 String []word_expected={"to","ahmed"};//word_expected You can add any number of texts , The important thing in it is at least one valid and justified in the encoded text
 		System.out.println("textEncrypted : \n"+Decryption_cezar(word_expected,text));// result use one function only 
 
-}// end main function 
+}// end main function g
 public static String Decryption_cezar(String []word_expected,String textEncrypted){// function Decryption have to parameter 
       String alphabet= "zyxwvutsrqponmlkjihgfedcba";// The characters are reversed
 		String text="";// text clair
