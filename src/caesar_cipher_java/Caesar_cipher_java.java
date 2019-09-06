@@ -8,9 +8,6 @@ package caesar_cipher_java;
 
 import java.util.Scanner;
 
-/**
- * @author islamlarbi / code club djelfa
- */
 public class Caesar_cipher_java {
 
 public static void main(String[] args){// main function 
